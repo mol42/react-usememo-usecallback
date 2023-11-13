@@ -3,6 +3,8 @@ import React from 'react';
 function PrimeCalculator() {
   const [selectedNum, setSelectedNum] = React.useState(100);
 
+  console.log("PrimeCalculator render");
+
   const allPrimes = [];
   for (let counter = 2; counter < selectedNum; counter++) {
     if (isPrime(counter)) {

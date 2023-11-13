@@ -6,6 +6,7 @@ function App() {
   const time = useTime();
   
   const allPrimes = React.useMemo(() => {
+    console.log("Demo3 useMemo allPrimes");
     const result = [];
     
     for (let counter = 2; counter < selectedNum; counter++) {

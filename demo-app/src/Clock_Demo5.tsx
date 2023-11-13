@@ -6,7 +6,7 @@ type ClockProps = {
 }
 
 function Clock({ time }: ClockProps) {
-  console.log("")
+  console.log("Clock render");
   return (
     <p className="clock">
       {format(time, 'hh:mm:ss a')}

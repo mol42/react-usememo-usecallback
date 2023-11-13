@@ -5,6 +5,8 @@ import TestButtonForUseCallback from './TestButton_Demo6';
 function App() {
   const [count, setCount] = React.useState(0);
 
+  console.log("Demo8 render");
+
   const handleTestButtonClick = useCallback(() => {
     setCount((currentValue) => currentValue + 1234);
   }, []);
@@ -12,6 +14,8 @@ function App() {
   return (
     <>
       Count: {count}
+      <br />
+      <br />
       <button
         onClick={() => {
           setCount(count + 1)
@@ -19,6 +23,7 @@ function App() {
       >
         Click me!
       </button>
+      <br />
       <TestButtonForUseCallback handleClick={handleTestButtonClick} />
     </>
   );

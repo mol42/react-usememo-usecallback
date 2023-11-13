@@ -11,10 +11,12 @@ import PrimeCalculator from './PrimeCalculator_Demo5';
 // komponentler icin re-render kontrolu hesaplamasina
 // girismez
 const PurePrimeCalculator = React.memo(PrimeCalculator);
+// const PurePrimeCalculator = PrimeCalculator;
 
 function App() {
   const time = useTime();
 
+  console.log("Demo5 render");
   // Come up with a suitable background color,
   // based on the time of day:
   const backgroundColor = getBackgroundColorFromTime(time);

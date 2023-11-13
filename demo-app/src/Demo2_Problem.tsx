@@ -10,7 +10,7 @@ function App() {
   // gerceklesiyor.
   const time = useTime();
 
-  console.log(`render`);
+  console.log(`Demo2 render`);
 
   // Prime degerleri hesapla
   const allPrimes = [];

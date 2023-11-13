@@ -1,9 +1,9 @@
 import React from 'react';
 
-function PrimeCalculator({name}: {name: string}) {
+function PrimeCalculator({name}: {name: string | undefined}) {
   const [selectedNum, setSelectedNum] = React.useState(100);
-
-  console.log(`${name} render`)
+  
+  console.log(`Render prime calculator ${name}`)
 
   const allPrimes = [];
   for (let counter = 2; counter < selectedNum; counter++) {

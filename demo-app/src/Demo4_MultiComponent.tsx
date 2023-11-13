@@ -4,10 +4,12 @@ import Clock from './Clock';
 import PrimeCalculator from './PrimeCalculator';
 
 function App() {
+  console.log("Demo4 render");
+
   return (
     <>
       <Clock />
-      <PrimeCalculator name="demo" />
+      <PrimeCalculator name="demo4" />
     </>
   );
 }

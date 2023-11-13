@@ -3,6 +3,8 @@ import format from 'date-fns/format';
 
 function Clock() {
   const time = useTime();
+
+  console.log("Render clock");
   
   return (
     <p className="clock">

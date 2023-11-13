@@ -1,11 +1,11 @@
 import React from 'react';
 
-function App({name}: {name: string}) {
+function App() {
   const [selectedNum, setSelectedNum] = React.useState(100);
 
   // NOT: development ortaminda 2 kez render cagrilir
   // production ortaminda 1 kex cagrilir
-  console.log(`${name} render`);
+  console.log(`Render Demo1`);
 
   // Prime degerleri hesapla
   const allPrimes = [];

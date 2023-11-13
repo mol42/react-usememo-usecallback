@@ -1,5 +1,5 @@
 import React from 'react';
-import { default as DemoApp} from './PrimeCalculator';
+import { default as DemoApp } from './PrimeCalculator';
 
 function App({name}: {name: string}) {
   const [selectedNum, setSelectedNum] = React.useState(100);

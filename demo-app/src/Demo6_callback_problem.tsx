@@ -5,6 +5,8 @@ import TestButtonForUseCallback from './TestButton_Demo6';
 function App() {
   const [count, setCount] = React.useState(0);
 
+  // const i = 10;
+  // refereans
   function handleTestButtonClick() {
     setCount((currentValue) => currentValue + 1234);
   }
